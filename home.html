@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cafe Bistro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      
+
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    
+    .fa-instagram {
+      background:plum;
+      color: orange;
+    }
+    .fa-share-alt {
+      background: black;
+      color: white;
+      border-radius: 110px;
+    }
+
+    
+
+
+    
+  </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <div class="row clearfix">
+                <img src="bistro.png" class="logo">
+                <ul class="main-nav">
+                    <li><a id="delivery" href="#">Delivery</a></li>
+                    <li><a href="pastorder.php">History</a></li>
+                    <li><a id="howtoorder" href="#">How To Order</a></li>
+                    
+                    
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                     <a href="https://www.facebook.com/" id="facebook" class="fa fa-facebook"></a>
+                     <a href="https://twitter.com/?lang=en" id="twitter" class="fa fa-twitter"></a>
+                     <a href="https://www.google.com/search?q=youtube&oq=youtube&aqs=chrome..69i57j0i395j0i131i395i433j0i395i433j0i131i395i433j0i395i433l2j69i65.1454j1j4&sourceid=chrome&ie=UTF-8" id="youtube" class="fa fa-youtube"></a>
+                     <a href="https://www.instagram.com/" id="instagram" class="fa fa-instagram"></a>
+                     <a href="#" id="share" class="fa fa-share-alt"></a>
+                    
+                    <hr>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="main-content">
+            <h1>Welcome To <span><b>Bistro Cafe</b></span></h1><br>
+
+            <h1>Fill With Coffee And Love</h1>
+
+            <a href="main1.php" class="btn btn-full">Click To Order</a>
+            <a href="" class="btn btn-full">Show More</a>
+            
+        </div>
+    </header>
+</body>
+</html>
+<script>
+    var facebook=document.getElementById("facebook").style.visibility = "hidden";
+var twitter=document.getElementById("twitter").style.visibility = "hidden";
+var youtube=document.getElementById("youtube").style.visibility = "hidden";
+var instagram=document.getElementById("instagram").style.visibility = "hidden";
+var close1=document.getElementById("close");
+var share1=document.getElementById("share");
+
+share1.onmouseover=function(){
+  if(document.getElementById("facebook").style.visibility =="hidden" && document.getElementById("twitter").style.visibility == "hidden" && document.getElementById("youtube").style.visibility == "hidden" && document.getElementById("instagram").style.visibility == "hidden"){
+   
+    var facebook=document.getElementById("facebook").style.visibility ="visible";
+    var twitter=document.getElementById("twitter").style.visibility = "visible"; 
+    var youtube=document.getElementById("youtube").style.visibility = "visible";
+    var instagram=document.getElementById("instagram").style.visibility = "visible";
+  }
+  else{
+    var facebook=document.getElementById("facebook").style.visibility ="hidden";
+    var twitter=document.getElementById("twitter").style.visibility = "hidden";
+    var youtube=document.getElementById("youtube").style.visibility = "hidden";
+    var instagram=document.getElementById("instagram").style.visibility = "hidden";
+  }
+    
+  
+};
+
+
+
+
+var delivery=document.getElementById("delivery");
+delivery.onclick=function(){
+    alert("Available For Delivery!");
+    
+
+};
+
+var howtoorder=document.getElementById("howtoorder");
+howtoorder.onclick=function(){
+    alert("Please Try on CLICK TO ORDER!");
+};
+
+
+
+</script>

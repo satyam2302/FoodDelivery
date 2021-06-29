@@ -1,0 +1,10 @@
+<html>
+    <style>
+        hr{
+            background-color:black;
+        }
+</style>
+<h1>hello</h1>
+<hr>
+<h1>bye</h1>
+</html>

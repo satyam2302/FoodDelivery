@@ -1,0 +1,55 @@
+<html>
+    <img src="foodicon/noodles.png"><b>noodles</b>
+    <button id="clickmeadd">add</button>
+    <button id="clickmerem">remove</button>
+    <img src="foodicon/beer.png"><b>beer</b>
+    <button id="clickmeadd1">add</button>
+    <button id="clickmerem1">remove</button>
+
+</html>
+<script>
+    var button=document.getElementById("clickmeadd");
+    count=0;
+    button.onclick = function(){
+        if(count>=0)
+        count +=1;
+        button.innerHTML="added"+count;
+
+    };
+    count;
+    var button1=document.getElementById("clickmerem");
+    count;
+    button1.onclick=function(){
+    if(count>=1)
+    count -= 1;
+    button.innerHTML="added"+count;
+    };
+
+    var button2=document.getElementById("clickmeadd1");
+    count1=0;
+    button2.onclick = function(){
+        if(count1>=0)
+        count1 +=1;
+        button2.innerHTML="added"+count1;
+
+    };
+    count1;
+    var button3=document.getElementById("clickmerem1");
+    count1;
+    button3.onclick=function(){
+    if(count1>=1)
+    count1 -= 1;
+    button2.innerHTML="added"+count;
+    };
+
+
+
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,108 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cafe Bistro</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <div class="row clearfix">
+                <img src="bistro.png" class="logo">
+                <ul class="main-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">How To Order</a></li>
+                    <li><a href="#">CheckMore</a></li>
+                    <li><a href="signup.html">Sign Up</li>
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+<form action="" method="POST">
+<i class="fa fa-search"></i><input type="text" name="search">
+</form>
+
+  
+    <form method="post">
+        <img src="foodicon/beer.png" class="scale"><b>Beer</b><button id="add">Add</button>
+
+         <button id="remove">Remove</button>
+                <br>
+                <br>
+                <br>
+
+        <img src="foodicon/cake.png" class="scale"><b>Cake</b><button id="add">Add</button>
+               
+
+        <button id="remove">Remove</button>
+                <br>
+                <br>
+                <br>        
+
+        <img src="foodicon/drink.png" class="scale"><b>Mojito</b><button id="add">Add</button>
+            
+        <button id="remove">Remove</button>
+                <br>
+                <br>
+                <br>
+        <img src="foodicon/french-fries.png" class="scale"><b>French Fries</b><button id="add">Add</button>
+              
+
+        <button id="remove">Remove</button>
+                <br>
+                <br>
+                <br>
+            <img src="foodicon/hamburger.png" class="scale"><b>Hamburger</b><button id="add">Add</button>
+            
+            <button id="remove">Remove</button>    
+    </form>
+
+
+    <script>
+        var add=document.getElementById("add");
+        add.addEventListener("click",addfunc,true);
+
+       
+        count=0;
+        
+        function addfunc(){
+        
+        count++;
+        add.innerHTML="added"+count;
+        };
+        
+       
+
+    </script>
+     <script>
+        var remove=document.getElementById("remove");
+        remove.addEventListener("click",removefunc,false);
+       function removefunc(){
+        cart-=1;
+        console.log(cart);
+        };
+    </script>
+
+    </body>
+    </html>
